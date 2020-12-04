@@ -8,7 +8,7 @@ const addition = (...numbers) => {
   // all your code
   if (numbers.length != 0) {
     let sum = 0;
-    numbers.forEach((number) => {
+    numbers.filter((number) => {
       if (isNaN(parseInt(number))) {
         throw new Error("Invalid Input");
       }
